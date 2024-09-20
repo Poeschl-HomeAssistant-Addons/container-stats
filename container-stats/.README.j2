@@ -1,0 +1,48 @@
+# Docker Container Stats
+
+It contains [Docker Container Stats](https://github.com/virtualzone/docker-container-stats) to monitor all running containers / addons.
+
+[![Release][release-badge]][release]
+![Addon Stage][stage-badge]
+
+[![Donate][donation-badge]][donation-url]
+
+## 🧪 Experimental Addon
+
+During long-term usage I noticed that the addon fills up all available memory when getting the data for a week.
+Especially on a Raspberry Pi with Home Assistant this means death in a few minutes.
+__Use this addon on your own risk!__
+
+## Security
+
+Since the addon accesses the docker api, the security rating is this low.
+Unfortunately there is now way to access the docker api without disabling the *Protection Mode* of the addon.
+Technically with disabling it, the addon can access and control other addons and the core on a HA supervised system.
+But without it we can not retrieve the statistics of the running container and this addon don't work at all.
+
+{% if channel == "edge" %}
+## ⚠ WARNING! THIS IS AN EDGE VERSION!
+
+This Home Assistant Add-on is and bloody edge build.
+Edge builds add-ons are based upon the latest development version.
+
+- They may not work at all.
+- They might stop working at any time.
+- They could have a negative impact on your system.
+
+If you are more interested in stable releases of our add-ons:
+
+For the stable version of the add-ons: [Stable-Repository]
+{% endif %}
+
+[stage-badge]: https://img.shields.io/badge/Addon%20stage-deprecated-lightgrey.svg
+
+[release-badge]: https://img.shields.io/badge/version-{{ version }}-blue.svg
+[release]: {{ repo }}/tree/{{ version }}
+
+[donation-badge]: https://img.shields.io/badge/Buy%20me%20a%20coffee-%23d32f2f?logo=buy-me-a-coffee&style=for-the-badge&logoColor=white
+[donation-url]: https://www.buymeacoffee.com/Poeschl
+
+{% if channel == "edge" %}
+[Stable-Repository]: https://github.com/Poeschl-HomeAssistant-Addons/repository
+{% endif %}
