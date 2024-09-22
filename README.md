@@ -37,7 +37,7 @@ But without it we can not retrieve the statistics of the running container and t
 [repository-url]: https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A//github.com/Poeschl-HomeAssistant-Addons/repository
 
 [install-badge]: https://img.shields.io/badge/Install%20on-Home%20Assistant-41BDF5?logo=home-assistant&style=for-the-badge
-[install-url]: https://my.home-assistant.io/redirect/supervisor_addon?addon=243ffc37_container-stats
+[install-url]: https://my.home-assistant.io/redirect/supervisor_addon?addon=68413af6_container-stats
 
 [donation-badge]: https://img.shields.io/badge/Buy%20me%20a%20coffee-%23d32f2f?logo=buy-me-a-coffee&style=for-the-badge&logoColor=white
 [donation-url]: https://www.buymeacoffee.com/Poeschl
